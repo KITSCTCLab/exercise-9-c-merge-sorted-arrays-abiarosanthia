@@ -1,4 +1,5 @@
 from typing import List
+
 def merge(nums1: List[int], m: int, nums2: List[int], n: int) -> None:
  
   x = nums1[0:m]
@@ -48,6 +49,7 @@ def merge_sort(myList) -> None:
             k += 1
   return myList
 
+
 # Do not change the following code
 nums1 = []
 nums2 = []
@@ -57,5 +59,5 @@ for item in input().split(', '):
   nums2.append(int(item))
 m = int(input())
 n = int(input())
-merge(nums1, m, nums2, n)
-print(nums1)
+
+print(merge(nums1, m, nums2, n))
